@@ -2,7 +2,7 @@
  * @author youngoo
  * @date 2021/12/2 8:36
  */
-public class Code03MergeSort {
+public class Code04MergeSort {
 
     public static void mergeSort(int[] arr) {
         if (arr == null || arr.length < 2) {
