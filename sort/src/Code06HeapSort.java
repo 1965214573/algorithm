@@ -12,6 +12,12 @@ public class Code06HeapSort {
         for (int i = 0; i < arr.length; i++) {
             heapInsert(arr, i);
         }
+
+        // 上面这一步可以使用heapify优化，从而让时间复杂父降为O(n)
+//        for (int i = arr.length - 1; i >= 0; i--) {
+//            heapify(arr, i, arr.length);
+//        }
+
         int heapSize = arr.length;
         swap(arr, 0, --heapSize);
         while (heapSize > 0) {
